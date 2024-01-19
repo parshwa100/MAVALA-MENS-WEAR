@@ -1,0 +1,179 @@
+<html>
+<head>
+<title></title>
+<head>
+<style>
+
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;
+}
+.navbar{
+ width:85%;
+ margin:auto;
+ padding:35px 0;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+}
+.logo{
+ width:10%;
+ height:7%;
+ cursor:pointer;
+}
+.navbar ul li{
+ list-style:none;
+ display:inline-block;
+ margin:0 20px;
+ position:relative;
+}
+.navbar ul li a{
+ text-decoration:none;
+ color:black;
+ text-transform:uppercase;
+}
+.navbar ul li::after{
+ content:'';
+ height:3px;
+ width:0;
+ background:#009688;
+ position:absolute;
+ left:0;
+ bottom:-10px;
+ transition:0.5s;
+}
+.navbar ul li:hover::after{
+ width:100%;
+}
+.items{
+ display:grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 30px 20px;
+grid-row-gap:30px;
+
+}
+
+.item img{
+float:center;
+width:350px;
+height:400px;
+object-fit:cover;
+cursor:pointer;
+transition:0.2s ease;
+}
+
+.item img:hover{
+transform:scale(1.04);
+}
+
+.item h2{
+padding :5px;
+text-align:center;
+}
+.item h3{
+padding :5px;
+text-align:center;
+}
+.item button{
+padding:5px;
+border:none;
+outline:none;
+background-color:GREEN;
+color:white;
+cursor:pointer;
+border-radius:4px;
+font-size:20px;
+display:block;
+margin:0 auto;
+transition: 0.2s all;
+color:white;
+}
+
+.item button:hover{
+transform:scale(1.08);
+
+
+}
+@media screen and(max-widh:768px){
+.items{
+grid-template-columns:repeat(1, 1fr);
+}}
+@media screen and(max-widh:768px){
+.items{
+grid-template-columns:repeat(1, 1fr);
+}
+a{
+color:darkwhite;
+}}
+</style>
+</head>
+<body>
+<div class="banner">
+<div class="navbar">
+<img src="pg1.jpg" class="logo">
+
+<ul>
+ <li><a href="index.html">HOME</a></li>
+  <li><a href="ABOUT US.html">ABOUT US</a></li>
+  <li><a href="PRODUCT'S.html">PRODUCT'S</a></li>
+  <li><a href="CONTACT US.html">CONTACT US</a></li>
+  <li><a href="feeedback.html">feedback</a></li>
+  <li><a href="LOGIN.html">LOGIN</a></li>
+</div>
+
+</div>
+
+
+<section class="items">
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt1.jpg"></a>
+<h2>full sleeve t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>RS.470</h3>
+<button>BUY NOW</button>
+</div>
+
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt2.jpg"></a>
+<h2>full sleeve t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>RS.470</h3>
+<button>BUY NOW</a></button>
+</div>
+
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt3.jpg"></a>
+<h2>full sleeve t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>RS.470</h3>
+<button>BUY NOW</button>
+</div>
+
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt4.jpg"></a>
+<h2>stand collar t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>rs.400</h3>
+<button>BUY NOW</button>
+</div>
+
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt5.jpg"></a>
+<h2>stand collar t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>400</h3>
+<button>BUY NOW</button>
+</div>
+
+<div class="item">
+<a href="t-shirts.HTML"><img src="t-shirt6.jpg"></a>
+<h2>stand collar t-shirt</h2>
+<h3>size=l,m,xl,xxl</h3>
+<center><h3>400</h3>
+<button>BUY NOW</button>
+
+</section>
+</body>
+</html>
+
